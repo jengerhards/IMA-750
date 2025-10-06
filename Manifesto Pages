@@ -1,1 +1,80 @@
+<html>
+  <head>
+    <title></title>
+    <meta name="description" content="Blog post for theory readings" />
+  </head>
+  <body>
+    <body style="background-color:#D2B48C;">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Dropdown container */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Button styling */
+    .dropdown-button {
+      background-color: #8B4513; /* woody brown */
+      color: white;
+      padding: 10px 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Hover effect */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Optional hover effect for button */
+    .dropdown:hover .dropdown-button {
+      background-color: #A0522D;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Jennifer's Manifesto Pages</h2>
+
+  <div class="dropdown">
+    <button class="dropdown-button">Select Phase</button>
+    <div class="dropdown-content">
+      <a href="phase1.html">Phase I</a>
+      <a href="phase2.html">Phase II</a>
+      <a href="phase3.html">Phase III</a>
+      <a href="phase4.html">Phase IV</a>
+    </div>
+  </div>
+
+</body>
+</html>
 
