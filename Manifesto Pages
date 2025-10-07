@@ -2,70 +2,11 @@
 <head>
 <meta name="description" content="Blog post for theory readings" />
  <title></title>
-  <style>
-    /* Container for the hoverable menu */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    /* The main hyperlink (hover target) */
-    .dropdown > a {
-      color: #ffffff;
-      background-color: #8B4513; /* Woody color */
-      padding: 10px 16px;
-      text-decoration: none;
-      border-radius: 4px;
-      display: inline-block;
-    }
-
-    .dropdown > a:hover {
-      background-color: #A0522D;
-    }
-
-    /* The dropdown content (hidden by default) */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 200px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      z-index: 1;
-      border-radius: 4px;
-    }
-
-    /* Links inside dropdown */
-    .dropdown-content a {
-      color: black;
-      padding: 10px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-
-    /* Show the dropdown when hovering over the main link */
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  </style>
-</head>
 <body style="background-color:#D2B48C;">
-
   <h2>Jennifer's Manifesto Pages</h2>
-
-  <!-- Hoverable hyperlink -->
-  <div class="dropdown">
-    <a href="#">View Phases</a>
-    <div class="dropdown-content">
-      <a href="phase1.html">Phase I</a>
-      <a href="phase2.html">Phase II</a>
-      <a href="phase3.html">Phase III</a>
-      <a href="phase4.html">Phase IV</a>
-    </div>
-  </div>
-
+href="Phase 1">
+href="Phase 2">
+href="Phase 3">
+href="Phase 4">
 </body>
 </html>
