@@ -12,6 +12,7 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+    
     .gallery img {
       width: 400px;
       height: 537px;
@@ -19,6 +20,7 @@
       transition: transform 0.2s;
       border-radius: 5px;
     }
+    
     .gallery img:hover {
       transform: scale(1.03);
     }
@@ -36,15 +38,18 @@
       justify-content: center;
       align-items: center;
     }
+    
     .lightbox img {
       max-width: 90%;
       max-height: 90%;
       border-radius: 5px;
       box-shadow: 0 0 15px #000;
     }
+    
     .lightbox:target {
       display: flex;
     }
+    
     .close-btn {
       position: absolute;
       top: 20px;
@@ -56,75 +61,76 @@
   </style>
 </head>
 
- <body style="background-color:#D2B48C;">
-    <h1>Phase 1</h1>
+<body style="background-color:#D2B48C;">
 
-       <h2><i>Project Description</i></h2>
-    <p> I plan to create a series of works from my photography to design motion graphics about fusion foods in NYC</p>
-<div class="gallery">
-  <a href="#img1"><img src="images/IMG_9967.JPG" alt="Sushi Donut"></a>
-  <a href="#img2"><img src="images/IMG_3503.jpg" alt="Sleepy Shimoda"></a>
-  <a href="#img3"><img src="images/IMG_3505.jpg" alt="Japanese Nationhood"></a>
-  <a href="#img4"><img src="images/IMG_3651.jpg" alt="Japanese_Korean_Italian"></a>
-  <a href="#img5"><img src="images/IMG_4559.jpg" alt="American_Mexican_Japanese"></a>
-  <a href="#img6"><img src="images/IMG_0315_(1).jpg" alt="Mexican Nationhood"></a>
-  <a href="#img7"><img src="images/IMG_4401.jpg" alt="Brazillian Nationhood"></a>
-  <a href="#img8"><img src="images/IMG_4691.jpg" alt="American_Italian_Brazillian"></a>
-  <a href="#img9"><img src="images/IMG_5253.jpeg" alt="Italian_Korean"></a>
-  <a href="#img10"><img src="images/IMG_2241.JPG" alt="Swiss Nationhood"></a>
-  <a href="#img11"><img src="images/IMG_2672.jpg" alt="AhHA Moment"></a>
-  <a href="#img12"><img src="images/IMG_3033.jpg" alt="Food knows no language"></a>
-</div>
+  <h1>Phase 1</h1>
 
-<!-- Lightbox sections -->
-<div id="img1" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_9967.JPG" alt="Sushi Donut">
-</div>
-<div id="img2" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_3503.jpg" alt="Sleepy Shimoda">
-</div>
-<div id="img3" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_3505.jpg" alt="Japanese Nationhood">
-</div>
-<div id="img4" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_3651.jpg" alt="Japanese_Korean_Italian">
-</div>
-<div id="img5" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_4559.jpg" alt="American_Mexican_Japanese">
-</div>
-<div id="img6" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_0315_(1).jpg" alt="Mexican Nationhood">
-</div>
-<div id="img7" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_4401.jpg" alt="Brazillian Nationhood">
-</div>
-<div id="img8" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_4691.jpg" alt="American_Italian_Brazillian">
-</div>
-<div id="img9" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_5253.jpeg" alt="Italian_Korean">
-</div>
-<div id="img10" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_2241.JPG" alt="Swiss Nationhood">
-</div>
-  <div id="img11" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_2672.jpg" alt="AhHA Moment">
-</div>
-  <div id="img12" class="lightbox">
-  <a href="#" class="close-btn">&times;</a>
-  <img src="images/IMG_3033.jpg" alt="Food knows no languge">
-</div>
+  <h2><i>Project Description</i></h2>
+  <p> I plan to create a series of works from my photography to design motion graphics about fusion foods in NYC</p>
+  <div class="gallery">
+    <a href="#img1"><img src="images/IMG_9967.JPG" alt="Sushi Donut"></a>
+    <a href="#img2"><img src="images/IMG_3503.jpg" alt="Sleepy Shimoda"></a>
+    <a href="#img3"><img src="images/IMG_3505.jpg" alt="Japanese Nationhood"></a>
+    <a href="#img4"><img src="images/IMG_3651.jpg" alt="Japanese_Korean_Italian"></a>
+    <a href="#img5"><img src="images/IMG_4559.jpg" alt="American_Mexican_Japanese"></a>
+    <a href="#img6"><img src="images/IMG_0315_(1).jpg" alt="Mexican Nationhood"></a>
+    <a href="#img7"><img src="images/IMG_4401.jpg" alt="Brazillian Nationhood"></a>
+    <a href="#img8"><img src="images/IMG_4691.jpg" alt="American_Italian_Brazillian"></a>
+    <a href="#img9"><img src="images/IMG_5253.jpeg" alt="Italian_Korean"></a>
+    <a href="#img10"><img src="images/IMG_2241.JPG" alt="Swiss Nationhood"></a>
+    <a href="#img11"><img src="images/IMG_2672.jpg" alt="AhHA Moment"></a>
+    <a href="#img12"><img src="images/IMG_3033.jpg" alt="Food knows no language"></a>
+  </div>
+
+  <!-- Lightbox section: Click to highlight photos -->
+  <div id="img1" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_9967.JPG" alt="Sushi Donut">
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_3503.jpg" alt="Sleepy Shimoda">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_3505.jpg" alt="Japanese Nationhood">
+  </div>
+  <div id="img4" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_3651.jpg" alt="Japanese_Korean_Italian">
+  </div>
+  <div id="img5" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_4559.jpg" alt="American_Mexican_Japanese">
+  </div>
+  <div id="img6" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_0315_(1).jpg" alt="Mexican Nationhood">
+  </div>
+  <div id="img7" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_4401.jpg" alt="Brazillian Nationhood">
+  </div>
+  <div id="img8" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_4691.jpg" alt="American_Italian_Brazillian">
+  </div>
+  <div id="img9" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_5253.jpeg" alt="Italian_Korean">
+  </div>
+  <div id="img10" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_2241.JPG" alt="Swiss Nationhood">
+  </div>
+    <div id="img11" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_2672.jpg" alt="AhHA Moment">
+  </div>
+    <div id="img12" class="lightbox">
+    <a href="#" class="close-btn">&times;</a>
+    <img src="images/IMG_3033.jpg" alt="Food knows no languge">
+  </div>
 
 </body>
 </html>
