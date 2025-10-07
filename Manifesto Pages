@@ -6,38 +6,42 @@
   <body>
     <body style="background-color:#D2B48C;">
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <style>
-    /* Dropdown container */
+    /* Container for the hoverable menu */
     .dropdown {
       position: relative;
       display: inline-block;
     }
 
-    /* Button styling */
-    .dropdown-button {
-      background-color: #8B4513; /* woody brown */
-      color: white;
+    /* The main hyperlink (hover target) */
+    .dropdown > a {
+      color: #ffffff;
+      background-color: #8B4513; /* Woody color */
       padding: 10px 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
+      text-decoration: none;
       border-radius: 4px;
+      display: inline-block;
     }
 
-    /* Dropdown content (hidden by default) */
+    .dropdown > a:hover {
+      background-color: #A0522D;
+    }
+
+    /* The dropdown content (hidden by default) */
     .dropdown-content {
       display: none;
       position: absolute;
       background-color: #f9f9f9;
       min-width: 200px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       z-index: 1;
       border-radius: 4px;
     }
 
-    /* Links inside the dropdown */
+    /* Links inside dropdown */
     .dropdown-content a {
       color: black;
       padding: 10px 16px;
@@ -45,19 +49,13 @@
       display: block;
     }
 
-    /* Hover effect */
     .dropdown-content a:hover {
       background-color: #ddd;
     }
 
-    /* Show dropdown on hover */
+    /* Show the dropdown when hovering over the main link */
     .dropdown:hover .dropdown-content {
       display: block;
-    }
-
-    /* Optional hover effect for button */
-    .dropdown:hover .dropdown-button {
-      background-color: #A0522D;
     }
   </style>
 </head>
@@ -65,8 +63,9 @@
 
   <h2>Jennifer's Manifesto Pages</h2>
 
+  <!-- Hoverable hyperlink -->
   <div class="dropdown">
-    <button class="dropdown-button">Select Phase</button>
+    <a href="#">View Phases</a>
     <div class="dropdown-content">
       <a href="phase1.html">Phase I</a>
       <a href="phase2.html">Phase II</a>
@@ -77,4 +76,3 @@
 
 </body>
 </html>
-
