@@ -1,13 +1,7 @@
 <html>
-  <head>
-    <title></title>
-    <meta name="description" content="Blog post for theory readings" />
-  </head>
-  <body>
-    <body style="background-color:#D2B48C;">
-
-<html>
 <head>
+<meta name="description" content="Blog post for theory readings" />
+ <title></title>
   <style>
     /* Container for the hoverable menu */
     .dropdown {
@@ -58,7 +52,7 @@
     }
   </style>
 </head>
-<body>
+<body style="background-color:#D2B48C;">
 
   <h2>Jennifer's Manifesto Pages</h2>
 
