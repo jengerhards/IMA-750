@@ -33,24 +33,15 @@ select {
     
        <h2><a><label for="phases">Jennifers Manifesto</label> </a></h2>
 
-      <label for="pageDropdown">Go to:</label>
-      <select id="pageDropdown" onchange="goToPage()">
-        <option value="">-- Select a page --</option>
-        <option value="index.html">Home</option>
-        <option value="about.html">About Us</option>
-        <option value="services.html">Services</option>
-        <option value="contact.html">Contact</option>
-      </select>
-      
-      <script>
-        function goToPage() {
-          const dropdown = document.getElementById("pageDropdown");
-          const selectedPage = dropdown.value;
-          if (selectedPage) {
-            window.location.href = selectedPage;
-          }
-        }
-      </script>
+    <div class="dropdown">
+      <button class="dropdown-button">Jennifer's Manifesto</button>
+      <div class="dropdown-content">
+        <a href="page1.html">P1</a>
+        <a href="page1.html">P2</a>
+        <a href="page1.html">P3</a>
+        <a href="page1.html">P4</a>
+      </div>
+    </div>  
 
 
 </body>
