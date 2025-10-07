@@ -32,12 +32,26 @@ select {
       <h2><a href="TheoryBlog.html">Blog Posts</a></h2>
     
        <h2><a><label for="phases">Jennifers Manifesto</label> </a></h2>
-<select id="phases" name="phases">
-  <option value="phase1">Phase 1</option>
-  <option value="phase2">Phase 2</option>
-  <option value="phase3">Phase 3</option>
-  <option value="phase4">Phase 4</option>
-</select>
+
+      <label for="pageDropdown">Go to:</label>
+      <select id="pageDropdown" onchange="goToPage()">
+        <option value="">-- Select a page --</option>
+        <option value="index.html">Home</option>
+        <option value="about.html">About Us</option>
+        <option value="services.html">Services</option>
+        <option value="contact.html">Contact</option>
+      </select>
+      
+      <script>
+        function goToPage() {
+          const dropdown = document.getElementById("pageDropdown");
+          const selectedPage = dropdown.value;
+          if (selectedPage) {
+            window.location.href = selectedPage;
+          }
+        }
+      </script>
+
 
 </body>
 
