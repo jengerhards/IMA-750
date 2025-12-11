@@ -35,13 +35,14 @@
 <body>
 
 <h1>A Menu</h1>
-
-  <div style="display: flex; justify-content: center;">
+  
 <label class="menu-item">
+  <div style="display: flex; justify-content: center;">
   <input type="checkbox" class="menu-checkbox" data-cultures="Japanese • American">
   <h2>Sushi Donut…………...….$Japanese.American</h2>
-</label>
   </div>
+</label>
+  
 
 <label class="menu-item">
   <input type="checkbox" class="menu-checkbox" data-cultures="Lebanese • Mexican">
@@ -65,9 +66,9 @@
 
 <hr>
   <h2>+ Tip:  __ø__ (don’t worry, we pay our employees)</h2>
-    <h2>= Total _______</h2>
+    <h2>= Total _______<div id="menu-output"></div></h2>
 <!-- This is where the cultures will display -->
-<div id="menu-output"></div>
+<!-- <div id="menu-output"></div> -->
 
 <script>
 // When any checkbox is clicked
