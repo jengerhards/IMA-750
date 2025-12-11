@@ -1,26 +1,92 @@
-<html>
-  <head>
-    <title>Phase IV</title>
-    <meta name="description" content="Phase 4 project" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Menu Interaction</title>
+
 <style>
-  h1, h2, h3 {text-align: center;}
-   body {
-        margin: 0px 25px;
-        background-color:#D2B48C; }   
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .menu-item {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  #menu-output {
+    margin-top: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+  }
 </style>
-  </head>
-  <body>
-    <h1>Phase 4</h1>
-  <h3> <a href="index.html">Back to Homepage</a></h3>
-    <h1>A Menú</h1>
-<h2>❐ Sushi Donut……........………$Japanese.American</h2> 
-<h2>❐ Tacos Al Pastor……….....……$Lebanese.Mexican</h2> 
-<h2>❐ SPAM Musubi ………….......…...…...……$Hawaiian</h2>
-<h2>❐ Houjicha Rice Curry…...…….$Indian.Japanese</h2> 
-<h2>❐ Oxtail Pizza……………....…...$Jamaican.Italian</h2>
+</head>
 
-    <h2>+ Tip:  __ø__ (don’t worry, we pay our employees)</h2>
-    <h2>= Total _______</h2>
+<body>
 
-  </body>
+<h2>A Menu</h2>
+
+<label class="menu-item">
+  <input type="checkbox" class="menu-checkbox" data-cultures="Japanese • American">
+  ❐ Sushi Donut…………...….$Japanese.American
+</label>
+
+<label class="menu-item">
+  <input type="checkbox" class="menu-checkbox" data-cultures="Lebanese • Mexican">
+  ❐ Tacos Al Pastor……………$Lebanese.Mexican
+</label>
+
+<label class="menu-item">
+  <input type="checkbox" class="menu-checkbox" data-cultures="Hawaiian">
+  ❐ SPAM Musubi ……………...…...……$Hawaiian
+</label>
+
+<label class="menu-item">
+  <input type="checkbox" class="menu-checkbox" data-cultures="Indian • Japanese">
+  ❐ Houjicha Rice Curry…...…….$Indian.Japanese
+</label>
+
+<label class="menu-item">
+  <input type="checkbox" class="menu-checkbox" data-cultures="Jamaican • Italian">
+  ❐ Oxtail Pizza……………....…...$Jamaican.Italian
+</label>
+
+<hr>
+
+<!-- This is where the cultures will display -->
+<div id="menu-output"></div>
+
+<script>
+// When any checkbox is clicked
+function setupMenuBehavior() {
+  const checkboxes = document.querySelectorAll(".menu-checkbox");
+  const output = document.getElementById("menu-output");
+
+  checkboxes.forEach(box => {
+    box.addEventListener("change", () => {
+
+      // Get the cultures from the data attribute
+      const cultures = box.dataset.cultures;
+
+      // If checked, show cultures; if unchecked, clear
+      if (box.checked) {
+        output.textContent = cultures;
+      } else {
+        output.textContent = "";
+      }
+
+      // Only one checkbox active at a time
+      checkboxes.forEach(other => {
+        if (other !== box) other.checked = false;
+      });
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", setupMenuBehavior);
+</script>
+
+</body>
 </html>
