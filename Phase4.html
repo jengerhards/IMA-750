@@ -5,29 +5,29 @@
 <title>Phase IV</title>
 
 <style>
-
   h1, h2, h3 {text-align: center;}
-   body {
-        margin: 0px 25px;
-        background-color:#D2B48C; } 
 
-
-    
+  body {
+    margin: 0px 25px;
+    background-color: #D2B48C;
     font-family: Arial, sans-serif;
     padding: 20px;
     line-height: 1.6;
   }
+
   .menu-item {
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
     text-align: center;
   }
+
   #menu-output {
-    margin-top: 25px;
     font-size: 1.3em;
     font-weight: bold;
     color: #333;
+    display: inline;  /* <<< ensures text stays on same line */
+    margin-left: 10px; /* small spacing after Total: */
   }
 </style>
 </head>
@@ -35,48 +35,50 @@
 <body>
 
 <h1><u>A Menu</u></h1>
-  
+
 <label class="menu-item">
-  <div style="display: flex; justify-content: center;">
-  <input type="checkbox" class="menu-checkbox" data-cultures="Japanese • American">
-  <h2>Sushi Donut…………...….$Japanese.American</h2>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <input type="checkbox" class="menu-checkbox" data-cultures="Japanese • American">
+    <h2>Sushi Donut…………...….$Japanese.American</h2>
   </div>
 </label>
-  
 
 <label class="menu-item">
-  <div style="display: flex; justify-content: center;">
-  <input type="checkbox" class="menu-checkbox" data-cultures="Lebanese • Mexican">
-  <h2>Tacos Al Pastor……………$Lebanese.Mexican</h2>
-    </div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <input type="checkbox" class="menu-checkbox" data-cultures="Lebanese • Mexican">
+    <h2>Tacos Al Pastor……………$Lebanese.Mexican</h2>
+  </div>
 </label>
 
 <label class="menu-item">
-  <div style="display: flex; justify-content: center;">
-  <input type="checkbox" class="menu-checkbox" data-cultures="Hawaiian">
-  <h2>SPAM Musubi ……………...…...……$Hawaiian</h2>
-    </div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <input type="checkbox" class="menu-checkbox" data-cultures="Hawaiian">
+    <h2>SPAM Musubi ……………...…...……$Hawaiian</h2>
+  </div>
 </label>
 
 <label class="menu-item">
-  <div style="display: flex; justify-content: center;">
-  <input type="checkbox" class="menu-checkbox" data-cultures="Indian • Japanese">
-  <h2>Houjicha Rice Curry…...…….$Indian.Japanese</h2>
-    </div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <input type="checkbox" class="menu-checkbox" data-cultures="Indian • Japanese">
+    <h2>Houjicha Rice Curry…...…….$Indian.Japanese</h2>
+  </div>
 </label>
 
 <label class="menu-item">
-  <div style="display: flex; justify-content: center;">
-  <input type="checkbox" class="menu-checkbox" data-cultures="Jamaican • Italian">
-  <h2>Oxtail Pizza……………....…...$Jamaican.Italian</h2>
-    </div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <input type="checkbox" class="menu-checkbox" data-cultures="Jamaican • Italian">
+    <h2>Oxtail Pizza……………....…...$Jamaican.Italian</h2>
+  </div>
 </label>
 
 <hr>
-  <h2>+ Tip:  __ø__ (don’t worry, we pay our employees)</h2>
-    <h2>= Total:<div id="menu-output"></div></h2>
-<!-- This is where the cultures will display -->
-<!-- <div id="menu-output"></div> -->
+
+<h2>+ Tip:  __ø__ (don’t worry, we pay our employees)</h2>
+
+<h2>
+  = Total:
+  <span id="menu-output"></span> <!-- stays inline with Total -->
+</h2>
 
 <script>
 // When any checkbox is clicked
